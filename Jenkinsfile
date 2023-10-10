@@ -6,13 +6,13 @@ pipeline {
                echo "Building Artifact"
            }
        }
-      stage('2-Deploy Code') {
+       stage('2-Deploy Code') {
           steps {
                echo "Deploying Code"
           }
       }
-      stage('3-testing'){
-        steps{
+       stage('3-testing') {
+        steps {
             sh 'lscpu'
         }
       }
